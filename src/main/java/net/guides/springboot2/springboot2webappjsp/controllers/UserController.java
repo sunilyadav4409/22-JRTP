@@ -17,4 +17,11 @@ public class UserController {
 		model.addAttribute("users", userRepo.findAll());
 		return "users";
 	}
+
+	@GetMapping("/welcome")
+	public String newlyAddedMethods()
+	{
+		return "welcome to ashokit";
+	}
+
 }
